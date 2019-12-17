@@ -8,5 +8,6 @@ namespace SecretSanta_2._0.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        Person PresentReceiver { get; set; }
     }
 }
