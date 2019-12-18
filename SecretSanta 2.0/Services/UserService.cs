@@ -13,8 +13,7 @@ namespace SecretSanta_2._0.Services
         {
             using (var context = new SSContext())
             {
-                context.FromList.Add(user);
-                context.ToList.Add(user);
+                context.Persons.Add(user);
                 await context.SaveChangesAsync();
             }
         }
