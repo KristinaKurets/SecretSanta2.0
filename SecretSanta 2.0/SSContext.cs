@@ -8,8 +8,7 @@ namespace SecretSanta_2._0
 {
     public class SSContext : DbContext
     {
-        public DbSet<Person> FromList { get; set; }
-        public DbSet<Person> ToList { get; set; }
+        public DbSet<Person> Persons { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-KN0EBQM;Database=SecretSanta;Integrated Security=True;");
